@@ -9,4 +9,25 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Introduction
+My research question is What Nintendo future strategies should be? 
+For the data wrangling, base on global sales, I chose the top 1000 selling games in the world as my data set.
 
+
+#loading library
+```{r , message = FALSE}
+library(tidyverse)
+library(readr)
+library(kableExtra)
+library(ggplot2)
+library(lubridate)
+library(gridExtra)
+library(rmdformats)
+library(readxl)
+```
+
+
+```{r , message = FALSE, echo=FALSE}
+dat<- read_excel("D:\\Rstudioxuexi\\video_games_sales.xlsx")
+head(dat)
+```
