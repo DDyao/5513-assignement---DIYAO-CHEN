@@ -381,8 +381,6 @@ library(lubridate)
 library(gridExtra)
 library(rmdformats)
 library(readxl)</code></pre>
-<pre class="r"><code>dat&lt;- read_excel(&quot;D:\\Rstudioxuexi\\video_games_sales.xlsx&quot;)
-head(dat)</code></pre>
 <pre><code>## # A tibble: 6 x 5
 ##   Name                     Platform Year_of_Release Publisher Global_Sales
 ##   &lt;chr&gt;                    &lt;chr&gt;    &lt;chr&gt;           &lt;chr&gt;            &lt;dbl&gt;
@@ -392,6 +390,39 @@ head(dat)</code></pre>
 ## 4 Wii Sports Resort        Wii      2009            Nintendo          32.8
 ## 5 Pokemon Red/Pokemon Blue GB       1996            Nintendo          31.4
 ## 6 Tetris                   GB       1989            Nintendo          30.3</code></pre>
+</div>
+<div id="histocial-data-analysis" class="section level1">
+<h1>histocial data analysis</h1>
+<pre><code>## # A tibble: 5 x 2
+##   Publisher Global_Sales
+##   &lt;chr&gt;            &lt;dbl&gt;
+## 1 Nintendo          82.5
+## 2 Nintendo          40.2
+## 3 Nintendo          35.5
+## 4 Nintendo          32.8
+## 5 Nintendo          31.4</code></pre>
+<pre class="r"><code>dat3&lt;- dat2 %&gt;%
+  dplyr::select(Publisher) %&gt;%
+  group_by(Publisher) %&gt;%
+ mutate(Cases = n()) %&gt;%
+  unique() %&gt;%
+  arrange(-Cases)
+print(dat3)</code></pre>
+<pre><code>## # A tibble: 55 x 2
+## # Groups:   Publisher [55]
+##    Publisher                    Cases
+##    &lt;chr&gt;                        &lt;int&gt;
+##  1 Nintendo                       228
+##  2 Electronic Arts                152
+##  3 Sony Computer Entertainment     87
+##  4 Activision                      80
+##  5 Take-Two Interactive            53
+##  6 Ubisoft                         51
+##  7 Microsoft Game Studios          36
+##  8 THQ                             34
+##  9 Konami Digital Entertainment    28
+## 10 Sega                            27
+## # ... with 45 more rows</code></pre>
 </div>
 
 

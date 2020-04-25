@@ -31,3 +31,23 @@ library(readxl)
 dat<- read_excel("D:\\Rstudioxuexi\\video_games_sales.xlsx")
 head(dat)
 ```
+
+
+# histocial data analysis
+```{r , message = FALSE, echo=FALSE}
+dat2 <- dat %>% dplyr::select(Publisher,Global_Sales)
+
+head(dat2,n=5)
+
+```
+
+```{r}
+dat3<- dat2 %>%
+  dplyr::select(Publisher) %>%
+  group_by(Publisher) %>%
+ mutate(Cases = n()) %>%
+  unique() %>%
+  arrange(-Cases)
+print(dat3)
+
+```
