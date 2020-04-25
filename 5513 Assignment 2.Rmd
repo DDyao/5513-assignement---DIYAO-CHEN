@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Introduction
@@ -34,14 +34,14 @@ head(dat)
 
 
 # histocial data analysis
-```{r , message = FALSE, echo=FALSE}
+```{r historical data, message = FALSE, echo=FALSE}
 dat2 <- dat %>% dplyr::select(Publisher,Global_Sales)
 
 head(dat2,n=5)
 
 ```
 
-```{r}
+```{r analysis Nintendo sell rank ,  message=FALSE, warning=FALSE}
 dat3<- dat2 %>%
   dplyr::select(Publisher) %>%
   group_by(Publisher) %>%
@@ -50,4 +50,12 @@ dat3<- dat2 %>%
   arrange(-Cases)
 print(dat3)
 
+```
+
+```{r creat a table  ,  message=FALSE, warning=FALSE}
+
+kable(caption = "Nintendo's percentage of the world's top 1000 best-selling games",dat3)%>%
+  kable_styling(bootstrap_options = c("striped","hover"))
+
+Nintendo percentage <- 228/1000
 ```
