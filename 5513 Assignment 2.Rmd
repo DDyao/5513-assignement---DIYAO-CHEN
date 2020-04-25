@@ -61,3 +61,11 @@ kable(caption = "Nintendo's weight of the world's top 1000 best-selling games",d
 
 ### Nintendo's percentage in the world's top 1000 best-selling games is 228/1000*100 = 22.8%. 
 
+```{r create a graph  ,  message=FALSE, warning=FALSE}
+Graph<- print(dat3)
+
+Graph1<-ggplot()+ geom_point(data=Graph,aes(x=Publisher,y=Cases),fill="red",colour="black")
+print(Graph1)
+
+
+```
