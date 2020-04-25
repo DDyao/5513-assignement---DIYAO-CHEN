@@ -52,10 +52,12 @@ print(dat3)
 
 ```
 
-```{r creat a table  ,  message=FALSE, warning=FALSE}
+```{r create a table  ,  message=FALSE, warning=FALSE}
 
-kable(caption = "Nintendo's percentage of the world's top 1000 best-selling games",dat3)%>%
+kable(caption = "Nintendo's weight of the world's top 1000 best-selling games",dat3)%>%
   kable_styling(bootstrap_options = c("striped","hover"))
 
-Nintendo percentage <- 228/1000
 ```
+
+### Nintendo's percentage in the world's top 1000 best-selling games is 228/1000*100 = 22.8%. 
+
