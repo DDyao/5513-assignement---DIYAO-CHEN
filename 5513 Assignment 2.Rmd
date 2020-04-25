@@ -67,5 +67,5 @@ Graph<- print(dat3)
 Graph1<-ggplot()+ geom_point(data=Graph,aes(x=Publisher,y=Cases),fill="red",colour="black")
 print(Graph1)
 
-
 ```
+### As we can see from the graph, Nintendo is a competitive gaming company. The games released by the company are loved by people all over the world. 
