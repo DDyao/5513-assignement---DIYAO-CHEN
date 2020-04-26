@@ -32,3 +32,6 @@ library(reshape2)
 dat<- read_excel("D:\\Rstudioxuexi\\video_games_sales.xlsx")
 head(dat)
 ```
+
+
+# In this part, we will analyze historical data to talk about Nintendo's future strange.
