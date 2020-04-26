@@ -34,4 +34,16 @@ head(dat)
 ```
 
 
-# In this part, we will analyze historical data to talk about Nintendo's future strange.
+## In this part, we will analyze historical data to talk about Nintendo's future strange. We will select Nintendo's company all the product in the top1000 hot sell games in the world by the different platform to analysis what is next step with Nintendo.
+
+
+```{r chunk platform select}
+dat4 <- dat %>%
+  dplyr::select(Publisher,Platform,Global_Sales) %>%
+  dplyr::filter(Publisher == "Nintendo")%>%
+ group_by(Platform) %>%
+ mutate(Cases = n()) %>%
+  unique() %>%
+  arrange(Platform)
+head(dat4)
+```

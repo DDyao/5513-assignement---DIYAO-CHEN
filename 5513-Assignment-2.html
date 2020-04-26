@@ -380,9 +380,8 @@ library(ggplot2)
 library(lubridate)
 library(gridExtra)
 library(rmdformats)
-library(readxl)</code></pre>
-<pre class="r"><code>dat&lt;- read_excel(&quot;D:\\Rstudioxuexi\\video_games_sales.xlsx&quot;)
-head(dat)</code></pre>
+library(readxl)
+library(reshape2)</code></pre>
 <pre><code>## # A tibble: 6 x 5
 ##   Name                     Platform Year_of_Release Publisher Global_Sales
 ##   &lt;chr&gt;                    &lt;chr&gt;    &lt;chr&gt;           &lt;chr&gt;            &lt;dbl&gt;
@@ -392,6 +391,27 @@ head(dat)</code></pre>
 ## 4 Wii Sports Resort        Wii      2009            Nintendo          32.8
 ## 5 Pokemon Red/Pokemon Blue GB       1996            Nintendo          31.4
 ## 6 Tetris                   GB       1989            Nintendo          30.3</code></pre>
+</div>
+<div id="in-this-part-we-will-analyze-historical-data-to-talk-about-nintendos-future-strange.-we-will-select-nintendos-company-all-the-product-in-the-top1000-hot-sell-games-in-the-world-by-the-different-platform-to-analysis-what-is-next-step-with-nintendo." class="section level1">
+<h1>In this part, we will analyze historical data to talk about Nintendo’s future strange. We will select Nintendo’s company all the product in the top1000 hot sell games in the world by the different platform to analysis what is next step with Nintendo.</h1>
+<pre class="r"><code>dat4 &lt;- dat %&gt;%
+  dplyr::select(Publisher,Platform,Global_Sales) %&gt;%
+  dplyr::filter(Publisher == &quot;Nintendo&quot;)%&gt;%
+ group_by(Platform) %&gt;%
+ mutate(Cases = n()) %&gt;%
+  unique() %&gt;%
+  arrange(Platform)
+head(dat4)</code></pre>
+<pre><code>## # A tibble: 6 x 4
+## # Groups:   Platform [1]
+##   Publisher Platform Global_Sales Cases
+##   &lt;chr&gt;     &lt;chr&gt;           &lt;dbl&gt; &lt;int&gt;
+## 1 Nintendo  3DS             14.6     26
+## 2 Nintendo  3DS             12.7     26
+## 3 Nintendo  3DS             11.7     26
+## 4 Nintendo  3DS             10.8     26
+## 5 Nintendo  3DS              9.9     26
+## 6 Nintendo  3DS              9.16    26</code></pre>
 </div>
 
 
