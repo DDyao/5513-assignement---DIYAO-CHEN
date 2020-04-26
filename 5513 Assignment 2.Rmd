@@ -33,6 +33,8 @@ dat<- read_excel("D:\\Rstudioxuexi\\video_games_sales.xlsx")
 head(dat)
 ```
 
+# Future strategy
+
 
 ## In this part, we will analyze historical data to talk about Nintendo's future strange. We will select Nintendo's company all the product in the top1000 hot sell games in the world by the different platform to analysis what is next step with Nintendo.
 
@@ -46,4 +48,9 @@ dat4 <- dat %>%
   unique() %>%
   arrange(Platform)
 head(dat4)
+```
+
+```{r chunk table}
+kable(caption = "All platform in the top1000 hot games sell",dat4)%>%
+  kable_styling(bootstrap_options = c("striped","hover"))
 ```
