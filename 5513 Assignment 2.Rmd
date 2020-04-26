@@ -64,7 +64,8 @@ kable(caption = "Nintendo's weight of the world's top 1000 best-selling games",d
 ```{r create a graph  ,  message=FALSE, warning=FALSE}
 Graph<- print(dat3)
 
-Graph1<-ggplot()+ geom_point(data=Graph,aes(x=Publisher,y=Cases),fill="red",colour="black")
+Graph1<-ggplot()+ geom_point(data=Graph,aes(x=Publisher,y=Cases),fill="red",colour="black")+
+  ggtitle("Nintendo's weight of the world's top 1000 best-selling games")
 print(Graph1)
 
 ```
