@@ -2,7 +2,11 @@
 title: "5513 assignment 2"
 author: "DIYAO CHEN"
 date: "2020/4/29"
-output: html_document
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
 ---
 
 ```{r setup, include=FALSE}
@@ -10,8 +14,10 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Introduction
-## My research question is What Nintendo future strategies should be? 
-## For the data wrangling, base on global sales, I chose the top 1000 selling games in the world as my data set.
+ This report focuses on analyzing the game sell's to get the Nintendo company future strategy.
+ My research question is What Nintendo future strategies should be? 
+ For the data wrangling,In order to preserve objectivity.base on global sales, I chose the top 1000 hot selling games in the world as my data set. 
+ By analyzing the global ranking of the top 1000 selling games. Compare the data to get the Nintendo company's performance in the Video game filed. and then we will analysis the Nintendo's platform data to get the platform performance to make some advice for Nintendo's future strategy.
 
 
 
@@ -54,7 +60,7 @@ dat3<- dat2 %>%
 
 
 ```
-# Table
+# Table 1
 ```{r create a table  ,  message=FALSE, warning=FALSE}
 
 kable(caption = "Nintendo's weight of the world's top 1000 best-selling games",dat3)%>%
@@ -62,27 +68,28 @@ kable(caption = "Nintendo's weight of the world's top 1000 best-selling games",d
 
 ```
 
-## Nintendo's percentage in the world's top 1000 best-selling games is 228/1000*100 = 22.8%. 
+Nintendo's percentage in the world's top 1000 best-selling games is 228/1000*100 = 22.8%, Which means that the total top1000 video games's sell, Nintendo has a proportion.
 
 
-# Grahp
+# Grahp 1
 ```{r create a graph  ,  message=FALSE, warning=FALSE}
 Graph<- print(dat3)
 
 Graph1<-ggplot()+ geom_point(data=Graph,aes(x=Publisher,y=Cases),fill="red",colour="black")+
-  ggtitle("Nintendo's weight of the world's top 1000 best-selling games")
+  ggtitle("Nintendo's weight of the world's top 1000 best-selling games")+
+  theme(axis.text.x=element_text(angle = 90, hjust = 1))
 print(Graph1)
 
 ```
 
 
-## As we can see from the graph, Nintendo is a competitive gaming company. The games released by the company are loved by people all over the world. 
+ As we can see from the graph, Nintendo is a competitive gaming company. The games released by the company are loved by people all over the world. 
 
 # Future strategy
 
-## In this part, we will analyze historical data to talk about Nintendo's future strange. We will select Nintendo's company all the product in the top1000 hot sell games in the world by the different platform to analysis what is next step with Nintendo.
+ In this part, we will analyze historical data to talk about Nintendo's future strange. We will select Nintendo's company all the product in the top1000 hot sell games in the world by the different platform to analysis what is next step with Nintendo.
 
-# Table
+# Table 2
 ```{r chunk platform select, message = FALSE, echo=FALSE}
 dat4 <- dat %>%
   dplyr::select(Publisher,Platform,Global_Sales) %>%
@@ -98,7 +105,7 @@ kable(caption = "Average of all platform in the top1000 hot games sell",dat4)%>%
   kable_styling(bootstrap_options = c("striped","hover"))
 ```
 
-# Graph
+# Graph 2
 ```{r chunk graph, message = FALSE, echo=FALSE}
 Graph2<- dat4%>%
   ggplot(aes(x = Platform, y = Global_Sales))+
@@ -108,9 +115,11 @@ Graph2<- dat4%>%
 print(Graph2)
 ```
 
-
-## As we can see from the graph, the games released by Nintendo, the Wil platform has the best sales. GB and DS platform also performed well.on the other hand, the GC platform has the worst sales. 
+ As we can see from the graph, the games released by Nintendo, the Wil platform has the best sales. GB and DS platform also performed well.on the other hand, the GC platform has the worst sales. 
 
 
 # Conclusion
-## Talk about the Nintendo company future strategy. Base on the graph*Nintendo's platform performance* and table*Average of all platform in the top1000 hot games sell*. I consider they should Put in more force to develop  Will platform's video games. On the other hand, the Nintendo company should be relatively less invested in the GC platform. The company can also increase the development of GB and DS platforms.
+ Talk about the Nintendo company. 
+ According to the table 1 *Nintendo's weight of the world's top 1000 best-selling games*, and the graph 1*Nintendo's weight of the world's top 1000 best-selling games*. Nintendo is a very influential and competitive gaming company. and its games are very popular in the world. 22.8 percent of the famous games are made by Nintendo.
+ But it also has some shortcomings. Each different platform is a different gaming device, which requires a lot of money. There are too many platforms, which let game player hard to choose. Nintendo should focus on developing a top-selling platform.
+Base on the graph 2*Nintendo's platform performance* and table 2*Average of all platform in the top1000 hot games sell*. The top sell platform is Will. I consider they should Put in more force to develop  Will platform's video games. On the other hand, GC is the lowest sell platform. Nintendo company should be relatively less invested in the GC platform. Finally, GB and DS platform  also has good sales. The company can also increase the development of GB and DS platforms.
