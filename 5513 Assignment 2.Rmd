@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Introduction
@@ -32,3 +32,42 @@ library(reshape2)
 dat<- read_excel("D:\\Rstudioxuexi\\video_games_sales.xlsx")
 head(dat)
 ```
+
+
+# histocial data analysis
+```{r historical data, message = FALSE, echo=FALSE}
+dat2 <- dat %>% dplyr::select(Publisher,Global_Sales)
+
+head(dat2,n=5)
+
+```
+
+```{r analysis Nintendo sell rank ,  message=FALSE, warning=FALSE}
+dat3<- dat2 %>%
+  dplyr::select(Publisher) %>%
+  group_by(Publisher) %>%
+ mutate(Cases = n()) %>%
+  unique() %>%
+  arrange(-Cases)
+print(dat3)
+
+```
+
+```{r create a table  ,  message=FALSE, warning=FALSE}
+
+kable(caption = "Nintendo's weight of the world's top 1000 best-selling games",dat3)%>%
+  kable_styling(bootstrap_options = c("striped","hover"))
+
+```
+
+### Nintendo's percentage in the world's top 1000 best-selling games is 228/1000*100 = 22.8%. 
+
+```{r create a graph  ,  message=FALSE, warning=FALSE}
+Graph<- print(dat3)
+
+Graph1<-ggplot()+ geom_point(data=Graph,aes(x=Publisher,y=Cases),fill="red",colour="black")+
+  ggtitle("Nintendo's weight of the world's top 1000 best-selling games")
+print(Graph1)
+
+```
+### As we can see from the graph, Nintendo is a competitive gaming company. The games released by the company are loved by people all over the world. 
