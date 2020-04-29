@@ -14,8 +14,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ## For the data wrangling, base on global sales, I chose the top 1000 selling games in the world as my data set.
 
 
-#loading library
+
 ```{r library, message=FALSE,echo=FALSE}
+#loading library
 library(lubridate)
 library(gridExtra)
 library(rmdformats)
@@ -29,8 +30,9 @@ library(ggplot2)
 
 
 ```{r , message = FALSE, echo=FALSE}
+# Input data
 dat<- read_excel("D:\\Rstudioxuexi\\video_games_sales.xlsx")
-head(dat)
+
 ```
 
 
@@ -49,10 +51,10 @@ dat3<- dat2 %>%
  mutate(Cases = n()) %>%
   unique() %>%
   arrange(-Cases)
-print(dat3)
+
 
 ```
-
+# Table
 ```{r create a table  ,  message=FALSE, warning=FALSE}
 
 kable(caption = "Nintendo's weight of the world's top 1000 best-selling games",dat3)%>%
@@ -62,6 +64,8 @@ kable(caption = "Nintendo's weight of the world's top 1000 best-selling games",d
 
 ## Nintendo's percentage in the world's top 1000 best-selling games is 228/1000*100 = 22.8%. 
 
+
+# Grahp
 ```{r create a graph  ,  message=FALSE, warning=FALSE}
 Graph<- print(dat3)
 
@@ -76,10 +80,9 @@ print(Graph1)
 
 # Future strategy
 
-
 ## In this part, we will analyze historical data to talk about Nintendo's future strange. We will select Nintendo's company all the product in the top1000 hot sell games in the world by the different platform to analysis what is next step with Nintendo.
 
-
+# Table
 ```{r chunk platform select, message = FALSE, echo=FALSE}
 dat4 <- dat %>%
   dplyr::select(Publisher,Platform,Global_Sales) %>%
@@ -87,7 +90,7 @@ dat4 <- dat %>%
  group_by(Platform) %>%
  summarise_at(vars(Global_Sales),
  list(Global_Sales = mean))
-print(dat4)
+
 ```
 
 ```{r chunk table, message = FALSE, echo=FALSE}
@@ -95,7 +98,7 @@ kable(caption = "Average of all platform in the top1000 hot games sell",dat4)%>%
   kable_styling(bootstrap_options = c("striped","hover"))
 ```
 
-
+# Graph
 ```{r chunk graph, message = FALSE, echo=FALSE}
 Graph2<- dat4%>%
   ggplot(aes(x = Platform, y = Global_Sales))+
@@ -106,7 +109,8 @@ print(Graph2)
 ```
 
 
-## As we can see from the graph, the games released by Nintendo, the Wil platform has the best sales. GB and DS platform also performs well.on the other hand,the GC platform has the worst sales. 
+## As we can see from the graph, the games released by Nintendo, the Wil platform has the best sales. GB and DS platform also performed well.on the other hand, the GC platform has the worst sales. 
+
 
 # Conclusion
-## Talk about the Nintendo company future strategy.Account to the graph*Nintendo's platform performance* and table*Average of all platform in the top1000 hot games sell*.I consider they should Put in more force to develop  Will platform's vedio games. On the other hand, Nintendo company should be relatively less invested in the GC platform. The company can also increase the development of GB and DS platforms.
+## Talk about the Nintendo company future strategy. Base on the graph*Nintendo's platform performance* and table*Average of all platform in the top1000 hot games sell*. I consider they should Put in more force to develop  Will platform's video games. On the other hand, the Nintendo company should be relatively less invested in the GC platform. The company can also increase the development of GB and DS platforms.
