@@ -1,7 +1,7 @@
 ---
 title: "5513 assignment 2"
 author: "DIYAO CHEN"
-date: "2020/4/24"
+date: "2020/4/29"
 output: html_document
 ---
 
@@ -16,15 +16,16 @@ For the data wrangling, base on global sales, I chose the top 1000 selling games
 
 #loading library
 ```{r , message = FALSE}
-library(tidyverse)
-library(readr)
-library(kableExtra)
-library(ggplot2)
 library(lubridate)
 library(gridExtra)
 library(rmdformats)
 library(readxl)
 library(reshape2)
+library(tidyverse)
+library(readr)
+library(kableExtra)
+library(ggplot2)
+
 ```
 
 
@@ -71,3 +72,39 @@ print(Graph1)
 
 ```
 ### As we can see from the graph, Nintendo is a competitive gaming company. The games released by the company are loved by people all over the world. 
+
+# Future strategy
+
+
+## In this part, we will analyze historical data to talk about Nintendo's future strange. We will select Nintendo's company all the product in the top1000 hot sell games in the world by the different platform to analysis what is next step with Nintendo.
+
+
+```{r chunk platform select, message = FALSE, echo=FALSE}
+dat4 <- dat %>%
+  dplyr::select(Publisher,Platform,Global_Sales) %>%
+  dplyr::filter(Publisher == "Nintendo")%>%
+ group_by(Platform) %>%
+ mutate(Cases = n()) %>%
+  unique() %>%
+  arrange(Platform)
+head(dat4)
+```
+
+```{r chunk table, message = FALSE, echo=FALSE}
+kable(caption = "All platform in the top1000 hot games sell",dat4)%>%
+  kable_styling(bootstrap_options = c("striped","hover"))
+```
+
+
+```{r chunk graph, message = FALSE, echo=FALSE}
+Graph2<- ggplot(data = dat4,mapping = aes(x= Platform))+
+  geom_bar(axis.text.x = element_text(angle = 90, hjust = 1))+
+  xlab("Platform")+
+ylab("Global_Sales")+
+  ggtitle("Nintendo's platform performance")
+print(Graph2)
+```
+## As we can see from the graph, the games released by Nintendo, the DS platform has the best sales. GB and Will platform also performs well.on the other hand,the WiiU platform has the worst sales. 
+
+# Conclusion
+## Talk about the Nintendo company future strategy, i consider they should Put in more force to develop  DS platform's vedio games. On the other hand, Nintendo company should be relatively less invested in the WiiU platform. The company can also increase the development of GB and Will platforms.
