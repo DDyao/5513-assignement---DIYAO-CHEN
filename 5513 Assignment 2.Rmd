@@ -10,12 +10,12 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Introduction
-My research question is What Nintendo future strategies should be? 
-For the data wrangling, base on global sales, I chose the top 1000 selling games in the world as my data set.
+## My research question is What Nintendo future strategies should be? 
+## For the data wrangling, base on global sales, I chose the top 1000 selling games in the world as my data set.
 
 
 #loading library
-```{r , message = FALSE}
+```{r library, message=FALSE,echo=FALSE}
 library(lubridate)
 library(gridExtra)
 library(rmdformats)
@@ -25,7 +25,6 @@ library(tidyverse)
 library(readr)
 library(kableExtra)
 library(ggplot2)
-
 ```
 
 
@@ -36,14 +35,14 @@ head(dat)
 
 
 # histocial data analysis
-```{r historical data, message = FALSE, echo=FALSE}
+```{r historical data, echo=FALSE, message=FALSE}
 dat2 <- dat %>% dplyr::select(Publisher,Global_Sales)
 
 head(dat2,n=5)
 
 ```
 
-```{r analysis Nintendo sell rank ,  message=FALSE, warning=FALSE}
+```{r analysis Nintendo sell rank ,  message=FALSE, warning=FALSE, echo=FALSE}
 dat3<- dat2 %>%
   dplyr::select(Publisher) %>%
   group_by(Publisher) %>%
@@ -61,7 +60,7 @@ kable(caption = "Nintendo's weight of the world's top 1000 best-selling games",d
 
 ```
 
-### Nintendo's percentage in the world's top 1000 best-selling games is 228/1000*100 = 22.8%. 
+## Nintendo's percentage in the world's top 1000 best-selling games is 228/1000*100 = 22.8%. 
 
 ```{r create a graph  ,  message=FALSE, warning=FALSE}
 Graph<- print(dat3)
@@ -71,7 +70,9 @@ Graph1<-ggplot()+ geom_point(data=Graph,aes(x=Publisher,y=Cases),fill="red",colo
 print(Graph1)
 
 ```
-### As we can see from the graph, Nintendo is a competitive gaming company. The games released by the company are loved by people all over the world. 
+
+
+## As we can see from the graph, Nintendo is a competitive gaming company. The games released by the company are loved by people all over the world. 
 
 # Future strategy
 
@@ -86,26 +87,26 @@ dat4 <- dat %>%
  group_by(Platform) %>%
  summarise_at(vars(Global_Sales),
  list(Global_Sales = mean))
-head(dat4)
+print(dat4)
 ```
 
 ```{r chunk table, message = FALSE, echo=FALSE}
-kable(caption = "All platform in the top1000 hot games sell",dat4)%>%
+kable(caption = "Average of all platform in the top1000 hot games sell",dat4)%>%
   kable_styling(bootstrap_options = c("striped","hover"))
 ```
 
 
 ```{r chunk graph, message = FALSE, echo=FALSE}
 Graph2<- dat4%>%
-  ggplot(aes(Platform))+
-  geom_bar(aes(x = Platform))+
+  ggplot(aes(x = Platform, y = Global_Sales))+
+  geom_bar(stat = "identity")+
   ggtitle("Nintendo's platform performance")+
   theme(axis.text.x=element_text(angle = 90, hjust = 1))
 print(Graph2)
 ```
 
 
-## As we can see from the graph, the games released by Nintendo, the DS platform has the best sales. GB and Will platform also performs well.on the other hand,the WiiU platform has the worst sales. 
+## As we can see from the graph, the games released by Nintendo, the Wil platform has the best sales. GB and DS platform also performs well.on the other hand,the GC platform has the worst sales. 
 
 # Conclusion
-## Talk about the Nintendo company future strategy, i consider they should Put in more force to develop  DS platform's vedio games. On the other hand, Nintendo company should be relatively less invested in the WiiU platform. The company can also increase the development of GB and Will platforms.
+## Talk about the Nintendo company future strategy.Account to the graph*Nintendo's platform performance* and table*Average of all platform in the top1000 hot games sell*.I consider they should Put in more force to develop  Will platform's vedio games. On the other hand, Nintendo company should be relatively less invested in the GC platform. The company can also increase the development of GB and DS platforms.
