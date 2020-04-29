@@ -84,9 +84,8 @@ dat4 <- dat %>%
   dplyr::select(Publisher,Platform,Global_Sales) %>%
   dplyr::filter(Publisher == "Nintendo")%>%
  group_by(Platform) %>%
- mutate(Cases = n()) %>%
-  unique() %>%
-  arrange(Platform)
+ summarise_at(vars(Global_Sales),
+ list(Global_Sales = mean))
 head(dat4)
 ```
 
@@ -97,13 +96,15 @@ kable(caption = "All platform in the top1000 hot games sell",dat4)%>%
 
 
 ```{r chunk graph, message = FALSE, echo=FALSE}
-Graph2<- ggplot(data = dat4,mapping = aes(x= Platform))+
-  geom_bar(axis.text.x = element_text(angle = 90, hjust = 1))+
-  xlab("Platform")+
-ylab("Global_Sales")+
-  ggtitle("Nintendo's platform performance")
+Graph2<- dat4%>%
+  ggplot(aes(Platform))+
+  geom_bar(aes(x = Platform))+
+  ggtitle("Nintendo's platform performance")+
+  theme(axis.text.x=element_text(angle = 90, hjust = 1))
 print(Graph2)
 ```
+
+
 ## As we can see from the graph, the games released by Nintendo, the DS platform has the best sales. GB and Will platform also performs well.on the other hand,the WiiU platform has the worst sales. 
 
 # Conclusion

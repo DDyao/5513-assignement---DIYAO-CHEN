@@ -373,7 +373,7 @@ summary {
 
 <h1 class="title toc-ignore">5513 assignment 2</h1>
 <h4 class="author">DIYAO CHEN</h4>
-<h4 class="date">2020/4/24</h4>
+<h4 class="date">2020/4/29</h4>
 
 </div>
 
@@ -382,18 +382,6 @@ summary {
 <h1>Introduction</h1>
 <p>My research question is What Nintendo future strategies should be? For the data wrangling, base on global sales, I chose the top 1000 selling games in the world as my data set.</p>
 <p>#loading library</p>
-<<<<<<< HEAD
-=======
-<pre class="r"><code>library(tidyverse)
-library(readr)
-library(kableExtra)
-library(ggplot2)
-library(lubridate)
-library(gridExtra)
-library(rmdformats)
-library(readxl)
-library(reshape2)</code></pre>
->>>>>>> FutureStrategy
 <pre><code>## # A tibble: 6 x 5
 ##   Name                     Platform Year_of_Release Publisher Global_Sales
 ##   &lt;chr&gt;                    &lt;chr&gt;    &lt;chr&gt;           &lt;chr&gt;            &lt;dbl&gt;
@@ -404,7 +392,6 @@ library(reshape2)</code></pre>
 ## 5 Pokemon Red/Pokemon Blue GB       1996            Nintendo          31.4
 ## 6 Tetris                   GB       1989            Nintendo          30.3</code></pre>
 </div>
-<<<<<<< HEAD
 <div id="histocial-data-analysis" class="section level1">
 <h1>histocial data analysis</h1>
 <pre><code>## # A tibble: 5 x 2
@@ -433,40 +420,12 @@ library(reshape2)</code></pre>
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
 <caption>
 Nintendo’s weight of the world’s top 1000 best-selling games
-=======
-<div id="future-strategy" class="section level1">
-<h1>Future strategy</h1>
-<div id="in-this-part-we-will-analyze-historical-data-to-talk-about-nintendos-future-strange.-we-will-select-nintendos-company-all-the-product-in-the-top1000-hot-sell-games-in-the-world-by-the-different-platform-to-analysis-what-is-next-step-with-nintendo." class="section level2">
-<h2>In this part, we will analyze historical data to talk about Nintendo’s future strange. We will select Nintendo’s company all the product in the top1000 hot sell games in the world by the different platform to analysis what is next step with Nintendo.</h2>
-<pre><code>## # A tibble: 6 x 4
-## # Groups:   Platform [1]
-##   Publisher Platform Global_Sales Cases
-##   &lt;chr&gt;     &lt;chr&gt;           &lt;dbl&gt; &lt;int&gt;
-## 1 Nintendo  3DS             14.6     26
-## 2 Nintendo  3DS             12.7     26
-## 3 Nintendo  3DS             11.7     26
-## 4 Nintendo  3DS             10.8     26
-## 5 Nintendo  3DS              9.9     26
-## 6 Nintendo  3DS              9.16    26</code></pre>
-<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
-<caption>
-All platform in the top1000 hot games sell
->>>>>>> FutureStrategy
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;">
 Publisher
 </th>
-<<<<<<< HEAD
-=======
-<th style="text-align:left;">
-Platform
-</th>
-<th style="text-align:right;">
-Global_Sales
-</th>
->>>>>>> FutureStrategy
 <th style="text-align:right;">
 Cases
 </th>
@@ -477,3510 +436,444 @@ Cases
 <td style="text-align:left;">
 Nintendo
 </td>
-<<<<<<< HEAD
 <td style="text-align:right;">
 228
-=======
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-14.60
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Electronic Arts
 </td>
 <td style="text-align:right;">
 152
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-12.66
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Sony Computer Entertainment
 </td>
 <td style="text-align:right;">
 87
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-11.68
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Activision
 </td>
 <td style="text-align:right;">
 80
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-10.81
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Take-Two Interactive
 </td>
 <td style="text-align:right;">
 53
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-9.90
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Ubisoft
 </td>
 <td style="text-align:right;">
 51
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-9.16
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Microsoft Game Studios
 </td>
 <td style="text-align:right;">
 36
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-7.55
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 THQ
 </td>
 <td style="text-align:right;">
 34
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-7.14
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Konami Digital Entertainment
 </td>
 <td style="text-align:right;">
 28
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-5.23
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Sega
 </td>
 <td style="text-align:right;">
 27
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-4.59
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Capcom
 </td>
 <td style="text-align:right;">
 24
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-4.33
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Warner Bros. Interactive Entertainment
 </td>
 <td style="text-align:right;">
 18
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-3.89
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Square Enix
 </td>
 <td style="text-align:right;">
 17
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-3.85
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 LucasArts
 </td>
 <td style="text-align:right;">
 15
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-3.28
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Namco Bandai Games
 </td>
 <td style="text-align:right;">
 14
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-3.10
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Atari
 </td>
 <td style="text-align:right;">
 12
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-3.05
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Eidos Interactive
 </td>
 <td style="text-align:right;">
 12
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-2.79
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Disney Interactive Studios
 </td>
 <td style="text-align:right;">
 11
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-2.34
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Bethesda Softworks
 </td>
 <td style="text-align:right;">
 10
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-2.30
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 SquareSoft
 </td>
 <td style="text-align:right;">
 10
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-2.09
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Virgin Interactive
 </td>
 <td style="text-align:right;">
 7
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-2.08
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Midway Games
 </td>
 <td style="text-align:right;">
 7
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-2.01
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Vivendi Games
 </td>
 <td style="text-align:right;">
 6
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-1.92
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Enix Corporation
 </td>
 <td style="text-align:right;">
 6
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-1.89
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Acclaim Entertainment
 </td>
 <td style="text-align:right;">
 6
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-1.83
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 505 Games
 </td>
 <td style="text-align:right;">
 5
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-3DS
-</td>
-<td style="text-align:right;">
-1.79
-</td>
-<td style="text-align:right;">
-26
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Sony Computer Entertainment Europe
 </td>
 <td style="text-align:right;">
 4
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-29.80
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 GT Interactive
 </td>
 <td style="text-align:right;">
 2
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-24.67
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Universal Interactive
 </td>
 <td style="text-align:right;">
 2
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-23.21
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 RedOctane
 </td>
 <td style="text-align:right;">
 2
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-20.15
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Hasbro Interactive
 </td>
 <td style="text-align:right;">
 2
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-18.25
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 MTV Games
 </td>
 <td style="text-align:right;">
 2
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-15.29
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Codemasters
 </td>
 <td style="text-align:right;">
 2
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-15.14
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Red Orb
 </td>
 <td style="text-align:right;">
 2
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-12.13
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Level 5
 </td>
 <td style="text-align:right;">
 2
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-11.77
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Arena Entertainment
 </td>
 <td style="text-align:right;">
 2
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-10.30
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Deep Silver
 </td>
 <td style="text-align:right;">
 2
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-8.91
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 989 Studios
 </td>
 <td style="text-align:right;">
 2
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-8.07
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Palcom
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-7.72
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Fox Interactive
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-6.62
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 N/A
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-5.78
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Majesco Entertainment
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-5.19
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 JVC
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-5.08
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 NCSoft
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-4.93
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 UEP Systems
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-3.94
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Parker Bros. 
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-3.83
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Maxis
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-3.77
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Imagic
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-3.67
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Tecmo Koei
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-3.45
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 ASCII Entertainment
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-3.33
-</td>
-<td style="text-align:right;">
-40
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Valve Software
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
 </td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-3.31
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-3.26
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-3.11
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-2.92
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-2.76
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-2.67
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-2.58
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-2.52
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-2.30
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-2.28
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-2.15
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-2.10
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-2.02
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-DS
-</td>
-<td style="text-align:right;">
-1.94
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-31.37
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-30.26
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-23.10
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-18.14
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-14.64
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-11.18
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-6.39
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-5.34
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-5.31
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-5.19
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-5.13
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-5.07
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-3.91
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-3.83
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-3.70
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-3.41
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-3.07
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-2.36
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-2.35
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-2.22
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-2.20
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-2.19
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-2.12
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-1.99
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-1.94
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-1.93
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-1.92
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-1.86
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GB
-</td>
-<td style="text-align:right;">
-1.76
-</td>
-<td style="text-align:right;">
-30
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-15.85
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-10.49
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-6.41
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-5.49
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-5.47
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-5.46
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-5.20
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-2.91
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-2.70
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-2.27
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-2.26
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-2.17
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-2.06
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-2.04
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GBA
-</td>
-<td style="text-align:right;">
-1.76
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GC
-</td>
-<td style="text-align:right;">
-7.07
-</td>
-<td style="text-align:right;">
-12
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GC
-</td>
-<td style="text-align:right;">
-6.95
-</td>
-<td style="text-align:right;">
-12
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GC
-</td>
-<td style="text-align:right;">
-6.31
-</td>
-<td style="text-align:right;">
-12
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GC
-</td>
-<td style="text-align:right;">
-4.60
-</td>
-<td style="text-align:right;">
-12
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GC
-</td>
-<td style="text-align:right;">
-3.60
-</td>
-<td style="text-align:right;">
-12
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GC
-</td>
-<td style="text-align:right;">
-3.15
-</td>
-<td style="text-align:right;">
-12
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GC
-</td>
-<td style="text-align:right;">
-2.82
-</td>
-<td style="text-align:right;">
-12
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GC
-</td>
-<td style="text-align:right;">
-2.54
-</td>
-<td style="text-align:right;">
-12
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GC
-</td>
-<td style="text-align:right;">
-2.47
-</td>
-<td style="text-align:right;">
-12
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GC
-</td>
-<td style="text-align:right;">
-2.25
-</td>
-<td style="text-align:right;">
-12
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GC
-</td>
-<td style="text-align:right;">
-2.08
-</td>
-<td style="text-align:right;">
-12
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-GC
-</td>
-<td style="text-align:right;">
-1.87
-</td>
-<td style="text-align:right;">
-12
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-11.89
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-9.87
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-8.09
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-7.60
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-5.55
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-5.45
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-5.27
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-4.88
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-4.03
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-3.65
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-3.63
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-3.36
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-3.12
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-2.94
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-2.85
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-2.73
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-2.70
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-2.65
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-2.52
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-2.50
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-2.32
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-2.17
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-2.03
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-1.91
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-1.83
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-N64
-</td>
-<td style="text-align:right;">
-1.77
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-40.24
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-28.31
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-17.28
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-7.46
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-6.51
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-5.58
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-4.85
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-4.38
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-4.16
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-4.01
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-3.50
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-3.20
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-3.02
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-2.73
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-2.65
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-2.42
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-2.40
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-2.28
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-2.17
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-2.15
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-2.14
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-1.96
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-1.85
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-NES
-</td>
-<td style="text-align:right;">
-1.76
-</td>
-<td style="text-align:right;">
-26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-20.61
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-10.55
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-9.30
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-8.76
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-5.15
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-4.61
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-4.12
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-3.51
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-3.20
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-2.99
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-2.85
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-2.75
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-2.14
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-2.00
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-SNES
-</td>
-<td style="text-align:right;">
-1.98
-</td>
-<td style="text-align:right;">
-15
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-82.53
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-35.52
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-32.77
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-28.92
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-28.32
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-22.70
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-21.79
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-12.84
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-11.35
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-8.38
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-8.27
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-7.51
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-7.15
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-6.44
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-4.98
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-4.62
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-3.95
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-3.79
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-3.71
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-3.25
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-3.13
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-2.89
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-2.58
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-2.56
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-2.22
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-2.08
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-2.06
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-1.89
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-Wii
-</td>
-<td style="text-align:right;">
-1.79
-</td>
-<td style="text-align:right;">
-29
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-WiiU
-</td>
-<td style="text-align:right;">
-7.09
-</td>
-<td style="text-align:right;">
-9
->>>>>>> FutureStrategy
-</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Mindscape
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-WiiU
-</td>
-<td style="text-align:right;">
-5.22
-</td>
-<td style="text-align:right;">
-9
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-WiiU
-</td>
-<td style="text-align:right;">
-4.87
-</td>
-<td style="text-align:right;">
-9
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-WiiU
-</td>
-<td style="text-align:right;">
-4.43
-</td>
-<td style="text-align:right;">
-9
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-WiiU
-</td>
-<td style="text-align:right;">
-4.42
-</td>
-<td style="text-align:right;">
-9
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Nintendo
-</td>
-<td style="text-align:left;">
-WiiU
-</td>
-<td style="text-align:right;">
-4.32
-</td>
-<td style="text-align:right;">
-9
->>>>>>> FutureStrategy
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<<<<<<< HEAD
 Infogrames
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-WiiU
-</td>
-<td style="text-align:right;">
-3.21
-</td>
-<td style="text-align:right;">
-9
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Unknown
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-WiiU
-</td>
-<td style="text-align:right;">
-2.24
-</td>
-<td style="text-align:right;">
-9
->>>>>>> FutureStrategy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-<<<<<<< HEAD
 Square
 </td>
 <td style="text-align:right;">
 1
-=======
-Nintendo
-</td>
-<td style="text-align:left;">
-WiiU
-</td>
-<td style="text-align:right;">
-1.79
-</td>
-<td style="text-align:right;">
-9
->>>>>>> FutureStrategy
 </td>
 </tr>
 </tbody>
 </table>
-<<<<<<< HEAD
 <div id="nintendos-percentage-in-the-worlds-top-1000-best-selling-games-is-2281000100-22.8." class="section level3">
 <h3>Nintendo’s percentage in the world’s top 1000 best-selling games is 228/1000*100 = 22.8%.</h3>
 <pre><code>## # A tibble: 55 x 2
@@ -3999,10 +892,128 @@ WiiU
 ## 10 Sega                            27
 ## # ... with 45 more rows</code></pre>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABUAAAAPACAIAAAB7BESOAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAgAElEQVR4nOzdv2/bRsMH8POL/gnJ5AaoAStDkLGAURkdPNoFggxGhmdwNxmZ5Azt4o7x8nSwPQX21gzPEGQoDNQaPRRWYaBj0KES4AKpJ+d/0DvIPySZkiiKknnK57PEkY7H04kU+dVRvLlWqxUAAACAYvu/+24AAAAAMJwADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAZ9XcX567srzfHGmBzVrn47XNkaqZLXm++Ju6Zr8nc95mYtwEm7XN5eWbXXBubnl5vzZ8qQFi7IR7lbHDkhf7jHbeHFwdS1J1VbNZ29/s2FOWlzf3a81CLphQVZ+DJpkl7n/pHwSgEAT4HNS3vi/aEa59ClW0VjGTpr+x1TaXS2uH9Xr99qF6CKVUy9o1CFFvBs3977fqw4uF9rdcpdLa1mHHnlKvH26tlUrLm7UBr336C8Yv4i0KgNgI8LkoVIRv7i/Plda2DtOd48EY7mNjq22uJazv6ePFoUvaNQiRbwa1zVLK+F7bLCXtKG31w7VSv1Ht6S8Yu6i3KADiI8DnJHuEXz1otZ1WhyeQNBp/OY2YcblvM5ndw8bW/PvD9Z/lvePGVU+0DlaHL2rXIES8GTRrm3Nrh+nK1jZvSpYrt/tJ43ivfF3kcC0pUE9/wfhFu0UNUpyjDAC9BPjcFGoU/nNUelIeXojo3Z4sV36qrjq1nAl23mGa7d+NpC29//q6aOX49OB2P1lcrZ62jitX/zt83XvMmv6CAMCIBPixlcvXp54i/L1afPz06q80V1MTvfKTdL96p/jsvAM0a/vtmz6EEEIop/iqo/nbu6tvuSrHCZemrB5cB+r6u9+6DlnTXxAAGJUAP74Xv9wML4jw9+l6FE+wg8jYefto7i93/Lq6vNc4/akyeImuNP08+Zclq88T8/T0FwQARibA5+F2eCFDhB8yrdLVbwYTZ+bpqelqzp2byyzrW6X+08D0VJhc4xiN6V5Z9xLL6W9I3Lw7XVjflV2P4iWO4bVb0FHR3HKW6Y16u6J3LbeTCyYWGDQt0gjvyOAJfnr67La3084LlPvGNlDat/i67+6ucvgkUxlaO/JGPto+1c/kNrBRdqXbejZr4WrOvs7dZviLGnWXn8bOO9JmMEp33en1zg67evFjh9Zy5biR8ufIN78y6f91SHKenv6Co2l2dWy6bSDDXpl+e8vvY3C09Y7/GofL78yku63jHp7yrrZZ2+/uvUFb1nVt15Xd+ZjrefV3u2fIuznRzRWYJS2yaVzfmae812i1Wrc/8rt5pN8CoXLc+fjNgl2L3TxaOW4dV/pdNNm9pts1DCzWavSvsH2W2CtLY4avrbzX6PPih72efu1sL3CnqkGvt29dffR7F3t7qk93dPZkyhYmta5/t2Xq7c7H+1fQ3Y60G1va7hz+wgeVTXwzRmttlk5I0e+DFhrc0lw3sGy7Urja5RM7LeeNcAo7b/pPyBG7q/tNu9Nf1wuOsmd01d29zoEfmnebM7QvbgtNf8Ehuhbp967079gMe+WI21s+H4Ojrzf7a0zcetI/eF8nA9k6b1i1Q3q9fHdDva6tvNfov0FerWhgs0Z5GSGvzRWYIQJ8Vr0Bfui5dcYAXx78k8fOhVKdTAw6N01sX8bGpFpbpdL34NrnLHjw6pKkqCjpNfcz8Cy0a10JzUuMVxnekaFJPLmWfr09sY1tsBHf4qkF+FE38kz7VIqm5rWBZdmVbj/e7vZG71eWKb9GvGpY/10+wcR23gGvP0N3dbxnewNf/sjRZGCn9KstVRJK2s6mv+AQHYtUBr4tOe2VI29vOQX4rNt5XseOLAF+9M/JjIen8TpvvHOMOwvdBvi9QUtXjhsDax/5VKld6UivvO9iwEwQ4LO6G+C7Pk8HHWtHCvBXz3VMy9PzreuAuD34pKZcOW7c1tlV6eBcmLoxXcekztU1jvd6vjgesMauKYm6Vzf8SN/RhK7X265rr+9LTlHj0GNw/3emzxlg6ndk+DbT+c373W/pc3p/+7YkjcxvcfZVDlw0cydk26f6y3kDy9bPPWu6na+v0bh+gYmdmX2XH9QTue28A1re+9wo3XXn5LujuSN/ZI3V/O4CA0/dE6qZ/oJD3O3YvnvlgA047V6ZfXsb4zNpjPXmd+zIEuCv15v2czLz4WmwPI56Pb3e9VmV/ljZ/VaV79Tc9fyAU6XJb67ALBDgs0o+zR4Q4bMH+KTP39vnRzmZuF0q+USrz/MZG9NxgBl4le7AI1PStQwDvyjps44+BccZFeo3DnczNNHvDCbxO59R3pGkmgb3dvd4wKCvS3Lb2AYa4y2eQoAfpRMy7lMD5LmBZe3nxvDzv9E3wgG7/MB+yHHn7dvyOw0cpbu6c+aQ3W/sAbFhO0DKbrlbzfQXHKa3Y+8W6NOxWfbKMba3sQJ81vXmd+zIGuBzOxkYeHgaJHu1qXuv32LDvwYe+HyfTp3K5grMAjexy1fH7ewO14bdWSulyk8JNy66uSNQqP/VSFnR7Uy9iTP9hM7mH/6a3PgRGlP7eat+u7q7Sy1Wf0m+aux2wfLeLwmrW+zs5T7tvONDcsHF6unVrpDcI0mLfPei3eyemzFd34i5/OKnqwIf/u56/u8P7T/KL767elF5vCM9a+/T2519NkhuG9tgE3mLczNCJ+T4Dt7IcQPLo59vaxsq8y4/RH4772B5dNfQ3W/62/NsSNzBkjt23L1yWtvbOOudxCfPiEb5nMzn8NQre7W1X696r7z3Q3LvPR/WoKSX37FU4kdIYq2xbq7AvRLg85Z7hO8zLc/1tEsjuLlTcL+ZfkLHAaY7G2RozE2c6L+6xWrSjEgdCyadIHQ3c8i5ye300vXDtbm55c3N/drYN2e9DVhdcfaqe8svvlu9WmtXALs51+gIRDm8I721969q+BlJnhvbQHm+xfkbpRPyewc75LaB5dHPI+T3zLt8n7KT2HkHyaG7+sWBzgXTbgZ0GKljs+2VU9/ewjjrncgnz0hGORnI5/CUY7WrB1fhdui8Dv2+tB7Q7yGEPvNp3PZOR7Vxba5AQQjw+cs3wuc3L/Lt6enh2lxf1xPiJB62RmlMiomFkg/2qRZMezq8+kPnkF/98HBrba1Uup6eJeNUOzcBq/Mc/vor/aePF29a19GJSfk9h3fkWppOG36KNK1JuHN9i/M2Sifk+A52ymsDy6Ofk89DE2Xe5fu1bBI77wA5dNeA3ko6dZ+I2zP7wi+Y3igdm3WvzH9765j1McH1yUGW9U7ok2cEeZ8MZEjwuVfbbDabtdr+/ubm8u3UgMmGvfz03VOczRWIiQA/CZO4kH7qcktNgxLA5M/8Fqunyfd3rdcPt7bWSnNzc6PPmXvT7NuAdR2v2l+iX59T3jyfFK9GleodGSFvMW2p96n72cByk9cuP5Gdd5IGnbVPIeX2GrS93caGhHdr+gsOMcmOvW3zfW1vk19vUa76mNDhKXu1za5J1EulUmltbWvr8LCea/vydP+bK1AIAvxkzESEnxWL1dOku2DfqB9urZWW90c5zt25oO365PTqIribIdSr5wsVryg+G9iVCey89+Q2v07aaL946cjG018wD7l27H1tb7OznUejWdtcniuV1rYO6/Xi5vXBbDbw+RLgJ6XIET7VTUmH/jYsrXSDMiMaeTRncbV6cNpqtWdY2avcmcS2vvX9KIe5m2uY279Cvrm/2PWp6WL3r5Svr/XrF6/ye0eKMtQyvnEG7KYv730q5w1sgAn0c967fM4771gGdtekr45P52ZIelBzbi4/vtcF08rYsRn3yty2t9v7iCW5c2+xTOud7tF8TBM6PGWotrZZWusZZy+Xy+VKpbK3d3zcaKScZD1X9725AjER4CenaBH+9krDqYS8VD/5TDqny7xgOouLq9Xqwelp+4jXMV1qzz2/h+gKWLf3B7+JT12/Ur655W33OX+O70iaTpveEOAwE36Lp2eC+1QeG9iU+3nyq8tp5+0jh/YP2AxS/cI+HzcvpP/9H2/vwt35lc/0F0xrlI7Nb6+c7PY2znqnfDQf04QOT9mrvb3xe8cc6qenp6cHBwfV6urq4hS/74h/cwXugwA/SV0R/vt399qW0Hm46/9xfnPXnbEvu7q5yDccvu5X1805XfYFB94L9vYeQn2+QFlcrZ5m/Ka9M0Bdn0J2xqeOXynftLa3sfm9Ix2d1u8M+naOrHuX41t8zya4T+WwgU25nzPv8okmufMmy6G7+m4Gt4lhCj9yGP5pcPsyur7ymf6CaY3UsZn2yulvbz0NGW290z2aj2lCh6fs1d5+6bP3y0FiXE//QTW2qDZXoCgE+MnqiPD3/zur28Ndv2uqmvvfb+X2U9phq2vWNpNv9DrKgoNDR5oz8szj0tcB6/DXza77i/Wu+8Pr18nxKtd3pOOlrm0m3LemX2ffj/ze4ns2yX1qChtYzv2ceZcfXNkEdt5hq8zcXX0WvNkIpnOTgiGfBrcvo3d2tukvmNYoHZtpr7yH7W2c9U75aD6mCR2eslY77H1s7i9P8XAZ1eYKFEaK39yQ5Ob2n+W9xuCSd74F7f6l083TXRUlP5q0/js/nLp95u6yXW25vXas1XsjlDRNTNGYztWVK3vH10s3Gsc9d13pqTnlgkP7vtV5l9ZyZa/jBd+pLdUP0Lr0vLO9FfS+8YkryPSODNlmrmpKrmhQb+e7sQ2W+S0e2tr+Uu0a42zk6fepVPLewNL3c/93/G7FAzbCEXb5BJPaedN+Qqburt57QQ9YMMNW0CvdDtDn06Dzwtrk1kx/wf7uduztRtDzsdZTcZa9Mvv2lv1jcJz15nfsSP9gXicDIxyeBstWbcdSXR2X8DmV5tCb/vk+vTPdzRWYBQJ8VukD/JDz8AkG+KQ1Js87MuCIlXtjOpQrlX69mOLir3TH+TQvOHVlg6oe8nVJ34Nohnek3xuS9oq5SQT4oa/zjoxvcS4B/m5rJ7aRj9gr/SvOuoFl6efMAX6MXX5oB6Rv/si1drzKDN3Vkd96byA1Tjv7SLsDDH0hmTeY3Bfsp2MzrAyqO6knsuyVWbe3cT4Gc17vsNd4bwE+8+FpmEzVpuzxkV9+xgA/3c0VmAUuoZ+Gjgvpp2Cx+lPv2jpujrJYPW30nXQktL/9vXN33HEa02eq0hDKlePTH570W3D1oHXnq/DuhRvp7qw77AWPVFlP1TdXsYXEyxS7Jlfqe4Vyju/I6sHd8YPbavb28t8KB29sg+X2Fqc2TmsHVjuhfSqfDWzK/Zx5l+9XV+477+DNYKzuevrTaZ+Fy5W9vDfnIQZ9GgzcJqe/YArPD/puVckdm2WvzLq9jfvBkn29Uz2aj2lCh6dM1S5WfxmUfsuV45sLR6YztcQ0N1dgJtz3NwjRGmUEvtXq+pp4wiPwrVar1TiudA4Flfd6yzQax3tdRUK587rPPm3P1pjW1QVd5c51tVc1tBfbzexcsn8zB2r01nTzksf5drrjnDLxbRj8dFIDU70jg9+QdmeX79Zzs1jKAf2E15FpYxvywkd8i8cYgR/U2lw28vT7VNrW5riBjdLPY4zAX9eQdZdPrivvnXf4J+QI3dXbW12XvY7/KdNjtB2gd6ssl7uvGS7QgglVJXVsT8+O2Jo0i2Xa3sb8GMy83hFf4z2OwN80drTDUzqZqu3tt3Jnbye+kImNwN++jOlsrkDs5lqtVgBmX3N/udS+FU7l+O4cxEA29iwY04R2IvsmMJtcQg+zoLY5N2zGoClORA0AIYSJHZ4c9YDPlgAPs+B2LtmtnxPnhZ3qRNQAEEKY2OHJUQ/4bAnwMAsWHz+9/vNwbXmz1rwdkWg2a/ub19cROpMBYIomdHhy1AM+W34DDzOitjm3djisUJ9bNgNZ+Z0tDDGhw5OjHvB5MgIPM2L1YMicMqaUAWD6JnR4ctQDPk8CPMyMxerB6Z35r9pTyuwdN1qnB6vOYwCYugkdnhz1gM+RS+gBAAAgAkbgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAi8MV9NyA+nz59GlrmwYMHKUsWuYaCNKMINRSkGbNRQ0GaUYQaCtKMItRQkGYUoYaCNGM2aihIM4pQQ0GaUYQaCtKMItRQkGbMRg0FaUYRaihIM4pQw0iVtEumZAQeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAh8cd8NAABggh4+fHjz9+Xl5T22BIAxGYEHAJhZnen97n8BiIsADwAwmxLjugwPEC8BHgBgBg0I6jI8QKQEeAAAAIiAAA8AAAAREOABAAAgAgI8AMAMGjBjnMnkACIlwAMAzKbEoC69A8RLgAcAmFk9cV16B4iaAA8AMMsuLy9brVar1ZLeAWInwAMAAEAEBHgAAACIgAAPAAAAEZhrtVr33QYAAABgiC/uuwHx+fTp09AyDx48SFmyyDUUpBlFqKEgzZiNGgrSjCLUUJBmFKGGgjSjCDUUpBmzUUNBmlGEGgrSjCLUUJBmFKGGgjRjNmooSDOKUENBmlGEGkaqpF0yJZfQAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAS+uO8GDHJx9v7d/34/OT8PIYSwsLDy7X9erC/NJxR8v/vf23IrG+MVAwAAgMIp7gj82W715c7b67gdQjg/P3m787L6/uJOwWcvu8qdvN15uXt2t75UxQAAAKCIihrgz3Z3Ts5DWFjZfnPU9mZ7YyGEcP62O3Wf7e6chBAWNq4KXhU72elO+imLAQAAQDEVM8BfvP/fSQhhZXv/1c017vNL6/vbKyGEcFI/u1vw+mL4m2Lnv/9xMWIxAAAAKKpiBvh/P56HEFbKSz2PL5VXQgjhn49Xmfvij9+TCi692FjojOYpiwEAAEBhFfMmdkuvjo5epSjXL+jPP/oqhPPzj/+GMJ++GAAAABTWXKvVuu82pHe2+2znJCxsvNlfnw8hXLyvvnx7fvPfDl3PpCzW6+uvv05sxJ9//pnTywEAAIC0inkJfbLrX7L/JyFtAwAAwEwr5iX0Sc52X749D2Fh40XvlfB9pbw4vk+xfiPtnz59GlrlgwcPUpYscg0FaUYRaihIM2ajhoI0owg1FKQZRaihIM0oQg0FacZs1FCQZhShhoI0owg1FKQZRaihIM2YjRoK0owi1FCQZhShhpEqaZdMKZIR+LPd6s5JCAsr20kXu/ez8OjLHIsBAADA/YlgBL79Q/UQ+vxUHQAAAD4DRR+BP9sdkN7nH30Vrq6A79G+7/xXj+ZHKAYAAADFVeQAf3G2+2zn5DwsrGwfJY+9f/loIXRMC3+75Md/Qsel8SmLAQAAQGEVN8Cf7b7cOWkPvb/qd9u6+W++XQjh/O27s+5F3709D2Hh22/mRyoGAAAAhVXQAH/xvnqd3gf+7L0dzcPJTnX3rD2+fnHWXrQrmKcsBgAAAEVVzJvYtcfGQzh/+/LZ24TnV7aPrkbl59d/3P74cufk/GTn5UlXia7kn7IYAAAAFFQhR+DP6ifDC12bX3r1ZntjZeHmgYWVjTdHd666T1kMAAAACqmQI/BLr46OXo1Qfn5p/dXS+tAlUhYDAACA4inkCDwAAADQTYAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiMBcq9W67zYAAAAAQ3xx3w2Iz6dPn4aWefDgQcqSRa6hIM0oQg0FacZs1FCQZhShhoI0owg1FKQZRaihIM2YjRoK0owi1FCQZhShhoI0owg1FKQZs1FDQZpRhBoK0owi1DBSJe2SKbmEHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABH44r4bADCahw8f3vx9eXl5jy0BAIBpMgIPxKQzvd/9LwAAzDABHohGYlyX4QEA+EwI8EAcBgR1GR4AgM9BLL+BP9t9tnOysn30ain5qYRF7pa+eL/7399Pzs9DCCEsrGz858X60vwkWgsAAAA5i2ME/mw3MaKHEEK4+PhPyjqevXx7nd5DCOcnb3de7p6N3zgAAACYvOKPwF+c7b7sH99D+PfjeUgabu929RXAwsb2j+tL8yFcnL3/787b85Od6qM3++uG4QEAACi4Qo/AX5y9360OTO8hnNVPQggLj74cWNH7/52EEFa296+vmZ9fWt/fXgkhnP/+x0Ve7QUmaMCMcSaTAwDgc1DcAH/xvvpy5+3JeVhY2X6zvdKv1Md/QggL334zaBD94o/fz0MIK+XuMfqlFxsLEjxEJDGoS+8AAHwmin0J/c2N5s7qfUr8+/E8hIVvH/37fve/b0/OQwhhYWHlPz++6rw73dVV9uXea+znH30Vwvn5x39DcBE9xOHy8rLznvPSOwAAn4+5Vqt1321IoX2n+aT7yldfvj1PWqKjbLvQwsbdH7v3fyaE8PXXXye25c8//8zwCgAAAGAcxb2EPpX22HoICyvbb46Ojo6Ojt682VhZCCGc7FTfuzQeAACAWVHsS+iHuZpCbmV7/2Zkfn5+/dX+o/Bs5+T89z8u1tPcYL7PNfT9Rto/ffo0tMoHDx6kLFnkGgrSjCLUUJBmzEYNBWlGEWooSDOKUENBmlGEGgrSjNmooSDNKEINBWlGEWooSDOKUENBmjEbNRSkGUWooSDNKEINI1XSLplS3CPw8+v7R0dHdyeQWyqPcoP5IbewBwAAgPsXd4Dv68tHC+FqaB0AAABmwIwG+LarofX5R1+F5DTf/gn9V4/cgx4AAICCizrAX7yvPnv27Nnu2Z1nupN5ezz+n4+9F9RfTSLvCnoAAAAKL+oA3x5aDyf1ngR/8f5/J6Fj4vf5b75dCOH87bvucmfv3p6HsPDtNwbgAQAAKLqoA5sbgSYAACAASURBVHxYerFxNWXc7tnV8PrF2W57aviFjRc397ZrJ/jOchdn76s7J0F+BwAAIA5xTyMX5td/3Pj95dvz85OdlyedT6xs/9g5g9z8+o/bH1/unPSWW9neTzPRHAAAANyzuEfgQ3smuTfbKwsL1w8sLKxsvzl6tdSTy+eXXr3Z3li5KRYWVjbe3J2ADgAAAAopkhH4pVdHR6/6Pju/9Gp/qf/Tt8XWXy2tDy8HAAAAhRP9CDwAAAB8DgR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAS+mGTlzWat0QghhNLq6uIkVwQAAAAzLr8R+GZtf3O/efv/2uZyqbTWVppb7noOAAAAGEk+Ab65vzxXWts6/Ktx/Uhtc+2w3lGifrhV2qzlsjIAAAD4/OQR4Gubpa161yPN/deHIYQQynuNVqvVOK6EEMLha6PwAAAAkEkOAb7262EI7ax+sNp+qPFXvf3QL9XFEMLi6sFxJYRQf/ebBA8AAAAZzLVarfFqaO4vl7bq5b3GafX6RnW1zbm1wxASHqsc34R8AAAAILXx70LfHm1/+vj2NvNXQ/Jdj82QT58+DS3z4MGDlCWLXENBmlGEGgrSjNmooSDNKEINBWlGEWooSDOKUENBmjEbNRSkGUWooSDNKEINBWlGEWooSDNmo4aCNKMINRSkGUWoYaRK2iVTmsA88M2/P4QQQqg8N9YOAAAA+Rg/wJeelEMIH/6+/nV787d37R/APyl1lGqPync/BgAAAKQ0foBffPw0hFDf+rnWDCE0az+370hffvHdzQX0zdrm2mHPYwAAAEB6OVxCv/q8PUncWmlubq601v79e+Wn9u3rmvuby9cPyu8AAACQUR6/gV89aOyVux6pHN9OKHfYniK+XDm+vSU9AAAAMJLx70IfQgiL1dPWd7X9n3/9Kzx58vy76mpnUi+XKy9++qH7MQAAAGAU+QT4EEJYXK0mTPG+etByL3oAAAAY1wSmkQshhGazObwQAAAAkFKeAb5Z299cXp6bm5ubK5VKm7UQQqhtzi1v7tfEeQAAABhHXgG+WdtcLq1tHdbrd56qH26tlZbbeR4AAADIIp8AX9ssrbXvNl+uVPYqHbekLz0pl0MIoX64trxvHB4AAACyySPA1zbb87xXjhut04OD6vOnt88tVk9PG8eVcgihvvWzUXgAAADIJIcAX/v1MIRQ3msc9JkpbnH14Je9cgjh8FcJHgAAALIYP8A3//4QQii/+G7QPO+L372Q4AEAACCz8QN84696COHp40H5PYTFx08HPg8AAAAMMKF54AEAAIA8jR/gS0/SXBx/9UP5J6Wx1wcAAACfofEDfJqftzf3Xx+GMPxCewAAACBRDpfQXyf4teXNWsJM783a5nJpqx5CKO/9sDr+6gAAAOAzlMdv4Ber7Vni6odrpbm55eXXH0II4cPrzc3l5bm50tphPYQQynu/VI2/AwAAQCZf5FLLYvW0ETa/3zqsh1Cv10MIIdTr7eAeQgihvNc4Fd8BAAAgq9zuQr9YPThtNI73KuVy+fbRcrlc2TtutKR3AAAAGEc+I/BXFhdXqwer1TyrBAAAAIJ54AEAACAKuY7A92o2a41GCCGUVlddQg8AAADZ5TcC36ztb+53TCNX21wuldbaSnPLXc8BAAAAI8knwDf3l+dKa1uHfzWuH6ltrnXchD6E+uFWabOWy8oAAADg85NHgK9tlrbqXY80918fhhBCKO81Wq1W47gSQgiHr43CAwAAQCY5BPjar4chtLP6wWr7ocZf9fZDv1QXQwiLqwfHlRBC/d1vEjwAAABkMH6Ab/79Idxm9RDCbaR/8d3NQ6vPKyGE+u019gAAAEB64wf49mj708e3t5m/yu9djwEAAABjmMA88O0h+RAqz1fzrxwAAAA+S+MH+NKTcgjhw9/Xv25v/vau/QP4J6WOUu1R+e7HAAAAgJTGD/CLj5+GEOpbP9eaIYRm7ef2Hek7fwDfrG2uHfY8BgAAAKSXwyX07fvThcO10tzcXGmt/fv3yk/te9o19zeXrx+U3wEAACCjPH4Dv3rQ2Ct3PVI5vp1Q7rA9RXy5cnxald8BAAAgky9yqWWxetr6rrb/869/hSdPnn9XXe1M6uVy5cVPP3Q/BgAAAIwinwAfQgiLq9WDu7edXz1ouRc9AAAAjGsC08gBAAAAectvBP5Ks9ns80zjt59fh+enVSPyAAAAMKqcAnyztv/z662r+9UNUHmez/oAAADg85JLgK9tXs8eN0T5SR6rAwAAgM9ODgG+uf/6Or2Xy5WnT8OHD4f1etffIYRy5fiXA3eiBwAAgEzGv4ld87d37YS+12idnh4cHBz88qIcQqg/fX5wcHB62mo19soh1A9f/9bv1/EAAADAYOMH+MZf9RBCee+X6vXw+uJ3L8ohhA9/XwX2xerpcSWE+tbPtbHXBgAAAJ+lvKaRe/q44+r4xcdPQwj1vxo3j6w+r4QQDn+V4AEAACCLSc4DfzMEH64TfOcjAAAAQGrjB/jSk67r5Tse6xyCb7v7CAAAAJDC+AH+6nr5d523qGs/1pnqm39/GHtNAAAA8NnK4RL61R/2yiHUt0rLm/u1q8R+NQR/k+prP2/VQwjlJ6Xx1wcAAACfnzx+A79Y/akSQgj1w6210mat46H6Vmlubnl5bm7tMIQQyi++MxE8AAAAZJDPTexWD1qNvUq566Efjivtv+r19r+dM80BAAAAo8jtLvSL1YPTVqtx/MP1RfKLqweNxnGlXC6Xy+XK3nHjVHwHAACAjL7It7rF1c6Qvri4enC6mu8aAAAA4HM0yXngAQAAgJyMHeCbzWYz8fH95eXN/VrykwAAAMBIxgjwzdrm8txcqfT9bwkhvfnbu3r9cGutVJpb3qxJ8QAAADCWjAG+WdtcLq0d1kMIof5X426Bjofqh2ul5X0ZHgAAALLLFOBrm9fhPYRy5fbG8x1Wq6etVuP4emq5+tbVBPEAAABABhkCfG1z7bD9V3mv0To9WF3sNz3c4urBaWPvKsMfronwAAAAkNHIAb65//omvv+SYmb3xeovNxH+tQvpAQAAIJNRA3zzt3dX185XfkoR30MIYbH6U6X9V/1d0v3uAAAAgGFGDfCNv65/+/4k4ZfvfZSeXP8UPul+dwAAAMAwmaeRe/o43fh7CCEsPn6adTUAAABAGGseeAAAAGBaRg3wN1fDf/g7/c/Zm39/aP8xynX3AAAAwI1RA/zN1fAj3JDu9sZ3o1x3DwAAANwY+RL61eej3lL+Nr8bgAcAAIBsRv8N/G2C3/o+xbzutc3S1qgTzwEAAADdMtzEbvXg+CbCl5Y3a31DfLO2v7m8dnj1v/LeD6sZGggAAACE8EWWhVYPGnsf2gPr9cO10mEI5crei+ePH18X+PvXX98dHtY7Fqkcnxp+BwAAgKwyBfgQFqunjbD5/dZ1SK8fbtUP+5QtV/Z+OZDeAQAAYAzZ54FfrB6cNo73KuX+RcrlynGjcSq9AwAAwJgyjsBfWVytHqxWD0KzWWs0/v7717/+CiE8efL88eNSaXUxz9h+tvts52Rl++jVUtKzF+93//v7yfl5CCGEhZWN/7xYX5rPXAwAAAAKZ7wAf21xcXVxcXV1YjepO9vdORnw5LOuZ89P3u6cfLyT9VMWAwAAgCLKfgn9tFz0Ju9uV9l+YWP7zdHR0dHRm+2NhRDCyU71/cXoxQAAAKCYCh3gL87e71ZfDkjv4eL9/05CCCvb+9cXw88vre9vr4QQzn//42LEYgAAAFBUxQ3wF++rL3fenpyHhZXtN9sryWX++P08hLBS7r4MfunFxkJnNE9ZDAAAAAqruAE+hBAWVja23+y/6nunuX8/JgXzEOYffRVCOP/470jFAAAAoLDmWq3Wfbchhfbv4HvvQn/xvvry7fnCxpv99Z6I3/VMymK9vv7668S2/Pnnn2O+GgAAABhVsUfgAQAAgBBCXtPIFdT5x39DGD7Re59i/UbaP336NLTKBw8epCxZ5BoK0owi1FCQZsxGDQVpRhFqKEgzilBDQZpRhBoK0ozZqKEgzShCDQVpRhFqKEgzilBDQZoxGzUUpBlFqKEgzShCDSNV0i6Z0kyPwC88+jLHYgAAAHB/ZjrAAwAAwKyIOsD3v4t8+77zXz2aH6EYAAAAFFfUAT58+WghhPDPx96J3C8+/hM6Lo1PWQwAAAAKK+4AP//NtwshnL99d9b18Nm7t+chLHz7zfxIxQAAAKCw4g7wV9E8nOxUd8/a4+sXZ++rOyehO5inLAYAAABFFfs0cvPrP25/fLlzcn6y8/Kk4/GV7f31+ZGLAQAAQEFFPgIfQphfevVme2Nl4eaBhZWNN0evlrIVAwAAgEKKZAR+6dXR0au+z84vrb9aWu///GjFAAAAoHjiH4EHAACAz4AADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABH44r4bAAAAn4uHDx/e/H15eXmPLQFiZAQeAACmoTO93/0vwFACPAAATFxiXJfhgZEI8AAAMFkDgroMD6QnwAMAAEAEBHgAAACIgAAPAAAAERDgAQBgsgbMGGcyOSA9AR4AACYuMahL78BIBHgAAJiGnrguvQOjEuABAGBKLi8vW61Wq9WS3oEMBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAAROCL+24AxfXw4cObvy8vL++xJQAAABiBJ1lner/7XwAAAKZMgCdBYlyX4QEAAO6RAE+vAUFdhgcAALgvAjwAAABEQIAHAACACAjwAAAAEAEBnl4DZowzmRwAAMB9EeBJkBjUpXcAAIB7JMCTrCeuS+8AAAD3S4Cnr8vLy1ar1Wq1pHcAAIB7J8ADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIwFyr1brvNgAAAABDfHHfDYjPp0+fhpZ58OBBypJFrqEgzShCDQVpxmzUUJBmFKGGgjSjCDUUpBlFqKEgzZiNGgrSjCLUUJBmFKGGgjSjCDUUpBmzUUNBmlGEGgrSjCLUMFIl7ZIpuYQeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQAAIAICPAAAAERAgAcAAIAICPAAAAAQAQEeAAAAIiDAAwAAQAQEeAAAAIiAAA8AAAAREOABAAAgAgI8AAAARECABwAAgAgI8AAAABABAR4AAAAiIMADAABABAR4AAAAiIAADwAAABEQ4AEAACACAjwAAABEQIAHAACACAjwAAAAEIEv7rsBAAAAI3v48OHN35eXl/fYEpgaI/AAAEBkOtP73f/CrBLgAQCAmCTGdRmez4EADwAARGNAUJfhmXkCPAAAAERAgAcAAIAICPAAAAAQAQEeAACIxoAZ4yKdTO7hw4dzc3Nzc3N+w89QMzAP/Nnus52ThMdXto9eLXU9cvF+97+/n5yfhxBCWFjZ+M+L9aX5KbQQAADIzeXl5d2sG2967/lvpC+E6Yh/BP7i4z+pyp3tPnv59jq9hxDOT97uvNw9m1SzAACASelJuZGGXvPhMar4R+D//Xgekobbu53t7pyEEBY2tn9cX5oP4eLs/X933p6f7FQfvdlfNwwPAABxuby8fPDgQQjh06dP992WLAbPhxfpVxJMWvQj8Gf1kxDCwqMvBxW6eP+/kxDCyvb+9TXz80vr+9srIYTz3/+4mHwrAQAAYDyxB/j2BfQL334zaBD94o/fz0MIK+XuMfqlFxsLEjwAAABRiP0S+n8/noew8O2jf9/v/vftyXkIISwsrPznx1edd6e7usq+3HuN/fyjr0I4P//4bwguogcAAKDQ5lqt1n23YQwX76sv354nPdPxo/h2oYWNuz927/9MCOHrr79OXOeff/45XqMBAADC3Nxc4uNxZzQmKfJL6Ntj6yEsrGy/OTo6Ojo6evNmY2UhhHCyU33v0ngAAKCoEoO69M4AcV9CfzWF3Mr2/s0t6Ofn11/tPwrPdk7Of//jYj3NDeb7XEPfb6Q9zV0ux78fZhFqKEgzilBDQZoxGzUUpBlFqKEgzShCDQVpRhFqKEgzZqOGgjSjCDUUpBlFqKEgzShCDQVpxmzUMGYlPXPaX15eZqtnBrpilmoYqZJ2yZTiHoGfX98/Ojq6O4HcUnmUG8wPuYU9AADApFxeXrZarVarZeo4hoo7wPf15aOFcDW0DgAAADNgRgN829XQ+vyjr0Jymm//hP6rR+5BDwAAQMFFHeAv3lefPXv2bPfszjPdybw9Hv/Px94L6q8mkXcFPQAAAIUXdYBvD62Hk3pPgr94/7+T0DHx+/w33y6EcP72XXe5s3dvz0NY+PYbA/AAAAAUXdQBPiy92LiaMm737Gp4/eJstz01/MLGi5t727UTfGe5i7P31Z2TIL8DAAAQh7inkQvz6z9u/P7y7fn5yc7Lk84nVrZ/7JxBbn79x+2PL3dOesutbO+nmWgOAAAA7lncI/ChPZPcm+2VhYXrBxYWVrbfHL1a6snl80uv3mxvrNwUCwsrG2/uTkAHAAAAhRT5CHzb/NKr/aVXKYqtv1paH14OAAAACif6EXgAAAD4HAjwAAAAEAEBHgAAACIgwAMAAEAEBHgAAACIgAAPAAAAERDgAQDg/9m7++A2zjtP8F9GJERRsEiKImEboMRmQjsjc+yE4xAjbTRTnTfdeDYwk6O0Pt0FrkzZVaSTWw1rZlxXRqoWWxW46pTb5fJmErDOruQMX2m8Ei8jY7acVeXGXS65pCLt4VgOo9hWRk2bgG2QYijJIC2RUnh/PP2OF4IiKTWg7+ePxAKB7qeffvp5nl/38zxNRFQGGMATERERERERlQEG8ERERERERERlgAE8ERERERERURlgAE9ERERERERUBhjAExEREREREZUBBvBEREREREREZYABPBEREREREVEZYABPREREREREVAYYwBMRERERERGVAQbwRERERERERGWAATwRERERERFRGWAAT0RERERERFQGGMATERERERERlQEG8ERERERERERlgAE8ERERERER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" width="672" /> ### As we can see from the graph, Nintendo is a competitive gaming company. The games released by the company are loved by people all over the world.</p>
-=======
-<pre><code>## Warning: Ignoring unknown parameters: axis.text.x</code></pre>
-<p><img src="data:image/png;base64,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w042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTTYBKrrYaOE++92lnZN+Ww042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTTYBKrrYaOE++92lnZN+Ww042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTTYBKrrYaOE++92lnZN+Ww042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTTYBKrrYaOE++92lnZN+Ww042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTTYBKrrYaOE++92lnZN+Ww042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTTYBKrrYaOE++92lnZN+Ww042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTTYBKrrYaOE++92lnZN+Ww042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTTYBKrrYaOE++92lnZN+Ww042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTTYBKrrYaOE++92lnZN+Ww042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTTYBKrrYaOE++92lnZN+Ww042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTTYBKrrYaOE++92lnZN+Ww042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTTYBKrrYaOE++92lnZN+Ww042ASq52mrgPPnep52RfVsOO9kEqORqq4Hz5Hufdkb2bTnsZBOgkqutBs6T733aGdm35bCTrRigaj0XBROgWmSaLUgO22wC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" width="672" /> ## As we can see from the graph,</p>
->>>>>>> FutureStrategy
+</div>
+</div>
+<div id="future-strategy" class="section level1">
+<h1>Future strategy</h1>
+<div id="in-this-part-we-will-analyze-historical-data-to-talk-about-nintendos-future-strange.-we-will-select-nintendos-company-all-the-product-in-the-top1000-hot-sell-games-in-the-world-by-the-different-platform-to-analysis-what-is-next-step-with-nintendo." class="section level2">
+<h2>In this part, we will analyze historical data to talk about Nintendo’s future strange. We will select Nintendo’s company all the product in the top1000 hot sell games in the world by the different platform to analysis what is next step with Nintendo.</h2>
+<pre><code>## # A tibble: 6 x 2
+##   Platform Global_Sales
+##   &lt;chr&gt;           &lt;dbl&gt;
+## 1 3DS              5.23
+## 2 DS               7.42
+## 3 GB               6.87
+## 4 GBA              4.84
+## 5 GC               3.81
+## 6 N64              4.13</code></pre>
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<caption>
+All platform in the top1000 hot games sell
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Platform
+</th>
+<th style="text-align:right;">
+Global_Sales
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+3DS
+</td>
+<td style="text-align:right;">
+5.225385
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DS
+</td>
+<td style="text-align:right;">
+7.417500
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GB
+</td>
+<td style="text-align:right;">
+6.869000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GBA
+</td>
+<td style="text-align:right;">
+4.836000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GC
+</td>
+<td style="text-align:right;">
+3.809167
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N64
+</td>
+<td style="text-align:right;">
+4.127308
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NES
+</td>
+<td style="text-align:right;">
+6.196538
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SNES
+</td>
+<td style="text-align:right;">
+5.634667
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Wii
+</td>
+<td style="text-align:right;">
+12.413448
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WiiU
+</td>
+<td style="text-align:right;">
+4.176667
+</td>
+</tr>
+</tbody>
+</table>
+<p><img src="data:image/png;base64,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" width="672" /></p>
+</div>
+<div id="as-we-can-see-from-the-graph-the-games-released-by-nintendo-the-ds-platform-has-the-best-sales.-gb-and-will-platform-also-performs-well.on-the-other-handthe-wiiu-platform-has-the-worst-sales." class="section level2">
+<h2>As we can see from the graph, the games released by Nintendo, the DS platform has the best sales. GB and Will platform also performs well.on the other hand,the WiiU platform has the worst sales.</h2>
+</div>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<div id="talk-about-the-nintendo-company-future-strategy-i-consider-they-should-put-in-more-force-to-develop-ds-platforms-vedio-games.-on-the-other-hand-nintendo-company-should-be-relatively-less-invested-in-the-wiiu-platform.-the-company-can-also-increase-the-development-of-gb-and-will-platforms." class="section level2">
+<h2>Talk about the Nintendo company future strategy, i consider they should Put in more force to develop DS platform’s vedio games. On the other hand, Nintendo company should be relatively less invested in the WiiU platform. The company can also increase the development of GB and Will platforms.</h2>
 </div>
 </div>
 
