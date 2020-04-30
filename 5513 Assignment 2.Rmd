@@ -123,3 +123,6 @@ print(Graph2)
  According to the table 1 *Nintendo's weight of the world's top 1000 best-selling games*, and the graph 1*Nintendo's weight of the world's top 1000 best-selling games*. Nintendo is a very influential and competitive gaming company. and its games are very popular in the world. 22.8 percent of the famous games are made by Nintendo.
  But it also has some shortcomings. Each different platform is a different gaming device, which requires a lot of money. There are too many platforms, which let game player hard to choose. Nintendo should focus on developing a top-selling platform.
 Base on the graph 2*Nintendo's platform performance* and table 2*Average of all platform in the top1000 hot games sell*. The top sell platform is Will. I consider they should Put in more force to develop  Will platform's video games. On the other hand, GC is the lowest sell platform. Nintendo company should be relatively less invested in the GC platform. Finally, GB and DS platform  also has good sales. The company can also increase the development of GB and DS platforms.
+
+# Reference
+Dataset from kaggle: https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings
